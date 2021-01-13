@@ -1,21 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
 
+import styles from "./index.module.css"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Logo from "../images/connollys_logo_medium.png"
+import Menu from "../documents/Takeaway-Menu.pdf"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={styles.container}>
+      <div className={styles.logoContainer}>
+        <img className={styles.logo} src={Logo} />
+      </div>
+
+      <div className={styles.contentContainer}>
+        <h1>Takeaway pizza, beer and coffee available every Friday night!</h1>
+        <h3>Pre-orders and collection only between 5pm and 9pm.</h3>
+        <h3>Last orders 12 noon Friday.</h3>
+        
+        Please call <a href="tel:01789204712">01789204712</a> to order.
+
+        Please see the <a href={Menu} target="_blank">Menu</a> here
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 

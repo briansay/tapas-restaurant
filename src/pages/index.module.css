@@ -1,0 +1,52 @@
+a {
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+  /* margin-top: -4rem; */
+  padding-top: 2rem;
+  background-image: url("../images/background_large_dark.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+  padding-bottom: 5rem;
+
+}
+
+.logoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+  .contentContainer {
+    max-width: 80%;
+  }
+}
+
+/* Desktop Screens */
+@media only screen and (min-width: 768px) {
+  .logo {
+    min-height: 20rem;  
+    max-height:30rem;
+  }
+
+  .contentContainer {
+    max-width: 50%;
+    
+  }
+
+
+}

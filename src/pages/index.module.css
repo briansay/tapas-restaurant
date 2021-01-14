@@ -33,7 +33,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #c1956c;
-  color: #222222;
+  color: #000000;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   padding: 0.25em 0.75em;
@@ -44,14 +44,17 @@ a {
 }
 
 .menuButton:hover {
-  background-color: #ffffff;
+  background-color: #f9cb9f;
+  color: #222222;
   transition: 220ms all ease-in-out;
 }
 
 .menuButton:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #ffffff;
+  box-shadow: 0 0 0 3px #ffffff;
+  color: #222222;
+  background-color: #f9cb9f;
 }
 
 .buttonIcon {

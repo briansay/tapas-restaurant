@@ -28,44 +28,38 @@ a {
 }
 
 .menuButton {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1956c;
+  color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
   text-align: center;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+  line-height: 1.1;
 }
 
-.menuButton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.menuButton:hover {
+  background-color: #ffffff;
+  transition: 220ms all ease-in-out;
 }
 
-.menuButton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.menuButton:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #ffffff;
 }
 
-.menuButton:hover span {
-  padding-right: 25px;
+.buttonIcon {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  margin-right: 0.3em;
 }
-
-.menuButton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Connolly's`,
+    description: `Family owned and run restaurant and bar serving handmade pizza, tapas favourites and a wide range of beer, wine and spirits.`,
+    author: `@mraquinn`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

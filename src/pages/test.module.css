@@ -1,8 +1,5 @@
-.button7 {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    display: inline-flex;
+.button {
+  display: inline-flex;
   height: 40px;
   width: 150px;
   border: 2px solid #BFC0C0;
@@ -15,50 +12,36 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  }
-  
-.button7 a {
-    position: relative;
-    transition: all .45s ease-Out;
-  }
-  
-.spin {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    left: 70px;
-    top: 20px;
-    transform: rotate(0deg);
-    background: none;
-    position: absolute;
-    transition: all .5s ease-Out;
-  }
-  
-.button7:hover .spin {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    left: -70px;
-    top: -70px;
-    background: #BFC0C0;
-    transform: rotate(80deg);
-  }
-  
-.button7:hover a {
-    color: #2D3142;
-  }
-
-.a {
-    color: #BFC0C0;
-    text-decoration: none;
-    letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-  
-@media screen and (min-width:1000px) {
-    h1 {
-      font-size: 2.2em;
-    }
-    #container {
-      width: 50%;
-    }
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.button a {
+  position: relative;
+  transition: all .35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+.button:hover #slide {
+  left: 0;
+}
+
+.button:hover a {
+  color: #2D3142;
 }

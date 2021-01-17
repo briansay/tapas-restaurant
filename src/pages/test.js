@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 
 import styles from "./test.module.css"
 import Layout from "../components/layout"
+import Menu from "../documents/Takeaway-Menu.pdf"
 
 class TestPage extends React.Component {
   render() {
@@ -14,15 +15,28 @@ class TestPage extends React.Component {
           <link rel="canonical" href="https://www.connollysrestaurant.co.uk" />
         </Helmet>
 
-        <Layout>
-
-        <div className={styles.button7} idName={styles.button7}>
-            <div className={styles.spin}>
-            </div>
-            <a href="www.connollystapas.co.uk">Menu</a>
-        </div>
-
-        </Layout>
+          <div className={styles.button}>
+            <div id={styles.slide}></div>
+            <a
+              href="tel:01789204712"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.callButton}
+            >
+              Call
+            </a>
+          </div>
+          <div className={styles.button}>
+            <div id={styles.slide}></div>
+            <a
+              href={Menu}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.menuButton}
+            >
+              Menu
+            </a>
+          </div>
       </div>
     )
   }

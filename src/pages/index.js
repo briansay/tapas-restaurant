@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
         <Layout>
           <div className={styles.container}>
             <div className={styles.logoContainer}>
-              <img className={styles.logo} src={Logo} />
+              <img className={styles.logo} src={Logo} alt="Connolly's Restaurant"/>
             </div>
 
             <a href="/test">link</a>

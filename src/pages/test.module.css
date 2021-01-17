@@ -4,7 +4,6 @@
   width: 150px;
   border: 2px solid #BFC0C0;
   margin: 20px 20px 20px 20px;
-  color: #BFC0C0;
   text-transform: uppercase;
   text-decoration: none;
   font-size: .8em;
@@ -18,7 +17,6 @@
 }
 
 a {
-  color: #BFC0C0;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -26,16 +24,25 @@ a {
 .button a {
   position: relative;
   transition: all .35s ease-Out;
+  color: blue;
 }
 
 #slide {
   width: 100%;
   height: 100%;
   left: -200px;
-  background: #BFC0C0;
+  background: pink;
   position: absolute;
   transition: all .35s ease-Out;
   bottom: 0;
+}
+
+#call {
+  background-color: green;
+}
+
+#menu {
+  background-color: #c1956c;
 }
 
 .button:hover #slide {
@@ -43,5 +50,9 @@ a {
 }
 
 .button:hover a {
-  color: #2D3142;
+  color: blue;
+}
+
+@media only screen and (min-width: 767px) {
+  .callButton { display: none; }
 }

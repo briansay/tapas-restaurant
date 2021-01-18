@@ -22,8 +22,6 @@ class IndexPage extends React.Component {
               <img className={styles.logo} src={Logo} alt="Connolly's Restaurant"/>
             </div>
 
-            <a href="/test">link</a>
-
             <div className={styles.contentContainer}>
               <h1>Takeaway pizza & tapas available every Friday night!</h1>
               <h3>Pre-orders and collection only between 5pm and 9pm.</h3>

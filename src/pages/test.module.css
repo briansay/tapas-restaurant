@@ -1,0 +1,58 @@
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.button a {
+  position: relative;
+  transition: all .35s ease-Out;
+  color: blue;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: pink;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#call {
+  background-color: green;
+}
+
+#menu {
+  background-color: #c1956c;
+}
+
+.button:hover #slide {
+  left: 0;
+}
+
+.button:hover a {
+  color: blue;
+}
+
+@media only screen and (min-width: 767px) {
+  .callButton { display: none; }
+}

@@ -37,6 +37,7 @@ a {
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   padding: 0.25em 0.75em;
+  margin: 0 1em;
   min-width: 10ch;
   min-height: 44px;
   text-align: center;
@@ -55,6 +56,41 @@ a {
   box-shadow: 0 0 0 3px #ffffff;
   color: #222222;
   background-color: #f9cb9f;
+}
+
+.callButton {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  margin: 0 1em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+@media only screen and (min-width: 767px) {
+  .callButton { display: none; }
+}
+
+.callButton:hover {
+  background-color:black;
+  color: #222222;
+  transition: 220ms all ease-in-out;
+}
+
+.callButton:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 3px #ffffff;
+  color: #222222;
+  background-color: black;
 }
 
 .buttonIcon {

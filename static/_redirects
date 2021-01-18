@@ -1,2 +1,2 @@
-# Redirects
-https://www.connollystapasbar.co.uk* https://www.connollysrestaurant.co.uk/:splat 301!
+http://www.connollytapasbar.co.uk        https://www.connollysrestaurant.co.uk              301
+https://www.connollytapasbar.co.uk        https://www.connollysrestaurant.co.uk              301

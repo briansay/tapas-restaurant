@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Connolly's`,
+    title: `Connolly's Restaurant & Bar`,
     description: `Family owned and run restaurant and bar serving handmade pizza, tapas favourites and a wide range of beer, wine and spirits.`,
     author: `@mraquinn`,
   },

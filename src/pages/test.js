@@ -12,49 +12,24 @@ class IndexPage extends React.Component {
       <div className="application">
         <Layout>
           <SEO title="Welcome!" />
-          <div className={styles.container}>
-            <div className={styles.logoContainer}>
-              <img
-                className={styles.logo}
-                src={Logo}
-                alt="Connolly's Restaurant"
-              />
-            </div>
 
-            <div className={styles.contentContainer}>
-              <h1>FRIDAY TAKEAWAY</h1>
-              <p>Pizza and tapas - pre-orders and collection only - 5-9pm</p>
-              <p>Last orders 12 noon Friday.</p>
-
-              <p>
-                Call <a href="tel:01789204712">01789204712</a> to order.
-              </p>
+          <div className={styles.wrapper}>
+            <div className={styles.header}>Header: Fixed height</div>
+            <div className={styles.content}>
+              <div className={styles.columns}>
+                <div className={styles.half}>
+                  <h1>Now</h1>
+                  <h2>Takeaway pizza & tapas every Friday night</h2>
+                </div>
+                <div className={styles.half}>
+                  <h1>Then</h1>
+                  <h2>Our family-run restaurant and bar serves fresh, handmade pizza and tapas favourites.</h2>
+                </div>
+              </div>
             </div>
-
-            <div className={styles.buttonContainer}>
-              <ul>
-                <li>
-                  <button>
-                    <a href="tel:01789204712">Call</a>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <a href={Menu} target="_blank" rel="noreferrer">
-                      Menu
-                    </a>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <a href={Menu} target="_blank" rel="noreferrer">
-                      Contact
-                    </a>
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <div className={styles.footer}>Footer: Fixed height</div>
           </div>
+
         </Layout>
       </div>
     )

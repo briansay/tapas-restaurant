@@ -25,7 +25,6 @@ class IndexPage extends React.Component {
             <div className={styles.contentContainer}>
               <h1>Takeaway pizza & tapas available every Friday night!</h1>
               <h3>Pre-orders and collection only between 5pm and 9pm.</h3>
-              <h3>Last orders 12 noon Friday.</h3>
 
               <h3>
                 Call <a href="tel:01789204712">01789204712</a> to order.

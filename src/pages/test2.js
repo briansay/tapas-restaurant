@@ -15,6 +15,8 @@ class IndexPage extends React.Component {
         <Layout>
           <SEO title="Welcome!" />
 
+          <div id="top"></div>
+
           <div className={styles.wrapper}>
             <div className={styles.section}>
               <img
@@ -22,10 +24,17 @@ class IndexPage extends React.Component {
                 className={styles.fadeIndelay}
                 alt="Connolly's Restaurant"
               />
-              <Link to="/test2/#now">Scroll To Now</Link>
-              <Link to="/test2/#then">Scroll To Then</Link>
+              <ul className={styles.fadeIndelay}>
+                <li>
+                  <Link to="/test2/#now">Takeaway</Link>
+                </li>
+                <li>
+                  <Link to="/test2/#then">Restaurant</Link>
+                </li>
+              </ul>
             </div>
-            <div className={styles.section} id="now">
+            <div id="now"></div>
+            <div className={styles.section}>
               <h1>Now</h1>
               <h2>Takeaway pizza & tapas every Friday night</h2>
               <p>
@@ -36,10 +45,27 @@ class IndexPage extends React.Component {
               <p>
                 Please call <a href="tel:01789204712">01789204712</a> to order.
               </p>
-              <button>Menu</button>
-              <button>Call</button>
+              <ul className={styles.fadeIndelay}>
+                <li>
+                <a
+                href={Menu}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.menuButton}
+              >
+                Menu
+              </a>
+                </li>
+                <li>
+                <a href="tel:01789204712">
+                Call
+              </a>
+                </li>
+              </ul>
+              <p><Link to="/test2/#top">Back to top</Link></p>
             </div>
-            <div className={styles.section} id="then">
+            <div id="then"></div>
+            <div className={styles.section}>
               <h1>Then</h1>
               <h2>Restaurant & Bar</h2>
               <p>
@@ -48,7 +74,10 @@ class IndexPage extends React.Component {
                 tapas.
               </p>
               <p>Some other stuff goes here</p>
-              <button>Contact</button>
+              <ul>
+                <a href="test"><li>Contact</li></a>
+              </ul>
+              <p><Link to="/test2/#top">Back to top</Link></p>
             </div>
           </div>
         </Layout>

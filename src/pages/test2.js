@@ -39,19 +39,22 @@ class IndexPage extends React.Component {
                 </li>
               </ul>
               <div className={styles.social}>
-                <a href="https://www.facebook.com/pages/category/Bar/Connollys-Deli-Tapas-Bar-114306121914586/"
+                <a
+                  href="https://www.facebook.com/pages/category/Bar/Connollys-Deli-Tapas-Bar-114306121914586/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={Facebook} alt="Connolly's on Facebook" />
                 </a>
-                <a href="https://www.instagram.com/connollystapas/?hl=en"
+                <a
+                  href="https://www.instagram.com/connollystapas/?hl=en"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={Instagram} alt="Connolly's on Instagram" />
                 </a>
-                <a href="https://twitter.com/connollystapas"
+                <a
+                  href="https://twitter.com/connollystapas"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -100,12 +103,61 @@ class IndexPage extends React.Component {
             <div id="contact"></div>
             <div className={styles.section}>
               <h1>Contact Us</h1>
-              <p>
-                When it's safe to open again, our family-run restaurant and bar
-                will be back serving fresh, handmade pizza and all our favourite
-                tapas.
-              </p>
-              <p>Some other stuff goes here</p>
+              <form
+                name="contactForm"
+                method="POST"
+                action="/contact-thanks"
+                data-netlify-honeypot="bot-field"
+                data-netlify="true"
+                id="contact-form"
+                className="contact-form"
+              >
+                <p className="screen-reader-text">
+                  <label>
+                    Don't fill this out if you're human:{" "}
+                    <input name="bot-field" />
+                  </label>
+                </p>
+                <p className="form-row">
+                  <label htmlFor="contact-form-name" className="form-label">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="contact-form-name"
+                    className="form-input"
+                  />
+                </p>
+                <p className="form-row">
+                  <label htmlFor="contant-form-email" className="form-label">
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="contant-form-email"
+                    className="form-input"
+                  />
+                </p>
+                <p className="form-row">
+                  <label htmlFor="contant-form-message" className="form-label">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="contant-form-message"
+                    className="form-textarea"
+                    rows="7"
+                  />
+                </p>
+                <input type="hidden" name="form-name" value="contactForm" />
+                <p className="form-row form-submit">
+                  <button type="submit" className="button">
+                    Send Message
+                  </button>
+                </p>
+              </form>
             </div>
           </div>
         </Layout>

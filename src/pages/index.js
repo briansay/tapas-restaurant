@@ -23,6 +23,8 @@ class IndexPage extends React.Component {
             </div>
 
             <div className={styles.contentContainer}>
+              <h1>We're open again! Thursday to Saturday, 5-11pm.</h1>
+              <h3>Join us for your favourite tapas, hand-made pizza or just a drink.</h3>
               <h1>Takeaway pizza & tapas available every Friday night!</h1>
               <h3>Pre-orders and collection only between 5pm and 9pm.</h3>
 

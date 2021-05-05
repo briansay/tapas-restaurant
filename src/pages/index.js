@@ -7,7 +7,8 @@ import Logo from "../images/connollys_logo_medium.png"
 import Facebook from "../images/facebook-white.png"
 import Instagram from "../images/instagram-white.png"
 import Twitter from "../images/twitter-white.png"
-import Menu from "../documents/Takeaway-Menu.pdf"
+import Menu from "../documents/Menu.pdf"
+import TakeawayMenu from "../documents/Takeaway-Menu.pdf"
 import SEO from "../components/seo"
 import CookieConsent from "react-cookie-consent"
 import { Link } from "gatsby"
@@ -30,13 +31,13 @@ class IndexPage extends React.Component {
               />
               <ul className={styles.fadeIndelay}>
                 <li>
-                  <Link to="/test2/#takeaway">Takeaway</Link>
+                  <Link to="/#restaurant">Restaurant</Link>
                 </li>
                 <li>
-                  <Link to="/test2/#restaurant">Restaurant</Link>
+                  <Link to="/#takeaway">Takeaway</Link>
                 </li>
                 <li>
-                  <Link to="/test2/#contact">Contact</Link>
+                  <Link to="/#contact">Contact</Link>
                 </li>
               </ul>
               <div className={styles.social}>
@@ -63,17 +64,12 @@ class IndexPage extends React.Component {
                 </a>
               </div>
             </div>
-            <div id="takeaway"></div>
+            <div id="restaurant"></div>
             <div className={styles.section}>
-              <h1>Takeaway Fridays</h1>
-              <h2>Takeaway pizza & tapas every Friday night</h2>
+              <h1>Restaurant & Bar</h1>
+              <h2>We're open again!</h2>
               <p>
-                During lockdown we're bringing you Connolly's take on pizza,
-                plus some of our most popular tapas.
-              </p>
-              <p>Pre-orders and collection only between 5pm and 9pm.</p>
-              <p>
-                Please call <a href="tel:01789204712">01789204712</a> to order.
+                Join us every Thursday, Friday & Saturday from 5-11pm. All your favourite tapas, hand-made pizzas and daily specials are available in our socially-distanced outside space.
               </p>
               <ul className={styles.fadeIndelay}>
                 <li>
@@ -91,15 +87,32 @@ class IndexPage extends React.Component {
                 </li>
               </ul>
             </div>
-            <div id="restaurant"></div>
+            <div id="takeaway"></div>
             <div className={styles.section}>
-              <h1>Restaurant & Bar</h1>
+              <h1>Takeaway</h1>
+              <h2>Hand-made pizza & tapas</h2>
               <p>
-                When it's safe to open again, our family-run restaurant and bar
-                will be back serving fresh, handmade pizza and all our favourite
-                tapas.
+                We're now offering tasty takeaway every Thursday, Friday and Saturday.
               </p>
-              <p>Some other stuff goes here</p>
+              <p>Pre-orders and collection only between 5pm and 9pm.</p>
+              <p>
+                Please call <a href="tel:01789204712">01789204712</a> to order.
+              </p>
+              <ul className={styles.fadeIndelay}>
+                <li>
+                  <a
+                    href={TakeawayMenu}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.menuButton}
+                  >
+                    Takeaway Menu
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:01789204712">Call</a>
+                </li>
+              </ul>
             </div>
             <div id="contact"></div>
             <div className={styles.section}>
